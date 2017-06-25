@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<style type="text/css">
+	* {margin: auto;padding: 0;}
+	body {background: #E3E3E3;font-family: 'Comfortaa';}
+	h1 {margin: 0 0 40px;}
+	p {padding: 20px;white-space:normal;}
+	p:first-letter {
+		color: #3BB4C1;
+	}
+	i:first-letter {
+		color: #3BB4C1;
+	}
+	.content {
+		text-align: center;
+		margin: 80px;
+	}
+	.tabs {
+		font-size: 0;
+		text-align: center;
+	}
+	.tabs li {
+		font-size: 16px;
+		display: inline-block;
+		background: #3BB4C1;
+		padding: 20px 0;
+		width: 300px;
+		border-radius: 20px 20px 0px 0px;
+	}
+	.tabs li:hover {
+		color: #048998;
+		background: #F6F5F5;
+	}
+	.text {
+		width: 900px;
+		min-height: 400px;
+		height: 100%;
+		background: #F6F5F5;
+		text-align: left;
+	}
+	.text img {
+		width: 250px;
+		padding: 20px 20px 20px 20px;
+		float: left;
+	}
+	.text ul {padding: 20px;}
+	.text i {padding: 20px;}
+	.footer {
+		width: 900px;
+		height: 100px;
+		background: #048998;
+		border-radius: 0 0 20px 20px;
+		line-height: 100px;
+	}
+	.footer img {
+		width: 50px;
+		float: right;
+		padding: 25px 30px 25px 0;
+	}
+	.footer h2 {
+		color: #F6F5F5;
+		float: left;
+		padding: 0 0 0 30px;
+	}
+</style>
+<body>
+<div class="content" id="repParContainer_div">
+	<h1><font color="#3BB4C1">K.</font> Batusheva</h1>
+	<ul class="tabs">
+		<li onclick="tab(this);" class="current">О себе</li>
+		<li onclick="tab(this);" class="">Образование</li>
+		<li onclick="tab(this);" class="">Компетенци</li>
+	</ul>
+
+	<div class="text" style="display: block;">
+		<img src="photo.jpg">
+		<p>Привет! Меня зовут Катерина Батушева
+23 июня я защитила выпускную квалификационную работу по теме "Реформирование систем исчисления и уплаты страховых взносов" на оценку "отлично". Теперь моей основной целью является карьера и вызовы связанные с ней..
+За время обучения в университете я подрабатывала рерайтом, копирайтом и написанием курсовых работ, участвовала в хакатонах. Могу с гордостью заявить, что с особым трепетом отношусь к оформлению документации. Способна в короткие сроки выполнять поставленные задачи. Неконфликтна от слова "совсем". Люблю узнавать новое обо всём, начиная с подробностей жизни российской интеллигенции 19 века, заканчивая самостоятельной комплектующих в ноутбуке.
+</p><br>
+<p>В свободное время люблю обнимать и  кормить людей своей съедобной (в 90% случаях) едой и саморазвиваться. Нахожусь в постоянном поиске хороших литературы и кино. Не люблю шумные мероприятия и Дейнерис Таргариен.</p>
+	</div>
+
+	<div class="text" style="display: none;">
+		<p>Школа: МБОУ СОШ №19</p><br><p>Университет: Кемеровский институт (филиал) РЭУ имени Г.В. Плеханова (направление: Финансы и кредит)</p>
+	</div>
+
+	<div class="text" style="display: none;">
+		<p>Сейчас я начала свой путь в мире тестирования.</p>
+		<i> 
+Прочитанные книги по тестированию:
+</i>
+	<ul>
+		<li>Сэм Канер - “Тестирование программного обеспечения. “</li>
+		<li>эм Канер, Джек Фолк, Енг Кек Нгуен “Тестирование программного обеспечения. Фундаментальные концепции менеджмента бизнес-приложений”</li>
+	</ul>
+	<i>Практические навыки:</i>
+	<ul>
+	<li>Уверенный пользователь ПК</li>
+<li>Базовые знания: HTML, CSS, JS</li>
+<li>Уверенное владение офисными приложениями</li>
+</p>
+	</div>
+
+	<div class="footer">
+		<img src="telegram.png">
+		<img src="vk.png">
+		<h2>K. Batusheva</h2>
+	</div>
+
+</div>
+<script type="text/javascript">
+
+function tab(m)
+{
+    var n=m.parentNode.getElementsByTagName('li');
+    var t=m.parentNode.parentNode.getElementsByTagName('div');
+    for(var i=0;i<n.length; i++)
+    {
+        
+        n[i].className=m==n[i]?'current':'';
+        t[i].style.display=m==n[i]?'block':'none';
+        
+    }
+}
+
+</script>
+</body>
+</html>
